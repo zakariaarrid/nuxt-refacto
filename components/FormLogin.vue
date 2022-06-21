@@ -45,14 +45,3 @@
     </form>
 </template>
 
-<script>
-import useAuth from '../composables/auth'
-
-export default {
-    setup() {
-        const { loginForm, validationErrors, processing, submitLogin } = useAuth()
-
-        return { loginForm, validationErrors, processing, submitLogin }
-    }
-}
-</script>
